@@ -1,0 +1,18 @@
+# GUI框架
+PyQt5>=5.15.0
+pyqtgraph>=0.12.0          # 实时数据可视化
+
+# 数据处理
+numpy>=1.20.0
+pandas>=1.3.0
+
+# Phase 1 - Day 3 采集功能依赖
+opencv-python>=4.5.0        # 视频采集
+sounddevice>=0.4.0          # 音频采集
+scipy>=1.7.0                # 音频处理
+pylsl>=1.14.0               # LSL同步框架
+pynput>=1.7.0               # 键盘控制
+
+# 可选依赖（如果你的Shimmer需要）
+# pyserial>=3.5              # 串口通信
+# bluetooth>=0.22            # 蓝牙通信

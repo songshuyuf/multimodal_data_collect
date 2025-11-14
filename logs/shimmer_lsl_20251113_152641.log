@@ -1,0 +1,289 @@
+2025-11-13 15:26:41,440 - __main__ - INFO - ============================================================
+2025-11-13 15:26:41,440 - __main__ - INFO - Shimmer GSR+ LSL Integration
+2025-11-13 15:26:41,440 - __main__ - INFO - ============================================================
+2025-11-13 15:26:41,440 - __main__ - INFO - 
+[1/4] Initializing Shimmer GSR+ device...
+2025-11-13 15:26:41,440 - shimmer_device - INFO - Attempting to connect to Shimmer on COM6...
+2025-11-13 15:26:42,616 - shimmer_device - INFO - Initializing Shimmer device...
+2025-11-13 15:26:42,679 - shimmer_device - INFO - Successfully connected and initialized Shimmer on COM6
+2025-11-13 15:26:42,679 - shimmer_device - INFO - Channel names: ['GSR_Skin_Conductance', 'GSR_Skin_Resistance', 'PPG_A13', 'Accel_LN_X', 'Accel_LN_Y', 'Accel_LN_Z', 'Accel_WR_X', 'Accel_WR_Y', 'Accel_WR_Z', 'Gyro_X', 'Gyro_Y', 'Gyro_Z', 'Mag_X', 'Mag_Y', 'Mag_Z', 'Temperature_BMP280', 'Pressure_BMP280', 'Ext_Exp_A7', 'VSenseBatt', 'PPGtoHR', 'PPG_IBI']
+2025-11-13 15:26:42,702 - __main__ - INFO - Device info: {'sampling_rate': 128.0, 'enabled_sensors': ['gsr', 'ppg', 'accelerometer_ln', 'accelerometer_wr', 'gyroscope', 'magnetometer', 'temperature', 'pressure', 'external_adc', 'battery', 'heart_rate'], 'channel_names': ['GSR_Skin_Conductance', 'GSR_Skin_Resistance', 'PPG_A13', 'Accel_LN_X', 'Accel_LN_Y', 'Accel_LN_Z', 'Accel_WR_X', 'Accel_WR_Y', 'Accel_WR_Z', 'Gyro_X', 'Gyro_Y', 'Gyro_Z', 'Mag_X', 'Mag_Y', 'Mag_Z', 'Temperature_BMP280', 'Pressure_BMP280', 'Ext_Exp_A7', 'VSenseBatt', 'PPGtoHR', 'PPG_IBI'], 'com_port': 'COM6'}
+2025-11-13 15:26:42,702 - __main__ - INFO - Channels: ['GSR_Skin_Conductance', 'GSR_Skin_Resistance', 'PPG_A13', 'Accel_LN_X', 'Accel_LN_Y', 'Accel_LN_Z', 'Accel_WR_X', 'Accel_WR_Y', 'Accel_WR_Z', 'Gyro_X', 'Gyro_Y', 'Gyro_Z', 'Mag_X', 'Mag_Y', 'Mag_Z', 'Temperature_BMP280', 'Pressure_BMP280', 'Ext_Exp_A7', 'VSenseBatt', 'PPGtoHR', 'PPG_IBI']
+2025-11-13 15:26:42,702 - __main__ - INFO - Sampling rate: 128.0 Hz
+2025-11-13 15:26:42,702 - __main__ - INFO - 
+[2/4] Initializing LSL stream...
+2025-11-13 15:26:42,702 - lsl_manager - INFO - Creating LSL stream: ShimmerGSR
+2025-11-13 15:26:42,702 - lsl_manager - INFO - Channels: 21, Sampling rate: 128.0 Hz
+2025-11-13 15:26:42,715 - lsl_manager - INFO - Added metadata to LSL stream
+2025-11-13 15:26:42,726 - lsl_manager - INFO - LSL outlet created successfully: ShimmerGSR
+2025-11-13 15:26:42,726 - __main__ - INFO - 
+[3/4] Initializing data saver...
+2025-11-13 15:26:42,727 - data_saver - INFO - Created CSV file with units: ./data\shimmer_gsr_20251113_152642.csv
+2025-11-13 15:26:42,728 - data_saver - INFO - Saved metadata to: ./data\shimmer_gsr_20251113_152642_metadata.json
+2025-11-13 15:26:42,728 - data_saver - INFO - Started saving data to: ./data\shimmer_gsr_20251113_152642.csv
+2025-11-13 15:26:42,728 - __main__ - INFO - 
+[4/4] Starting data streaming...
+2025-11-13 15:26:42,728 - shimmer_device - INFO - Starting data streaming...
+2025-11-13 15:26:42,773 - shimmer_device - INFO - Data streaming started successfully
+2025-11-13 15:26:42,773 - __main__ - INFO - 
+============================================================
+2025-11-13 15:26:42,773 - __main__ - INFO - Initialization complete! Ready to stream data.
+2025-11-13 15:26:42,773 - __main__ - INFO - ============================================================
+
+2025-11-13 15:26:42,773 - __main__ - INFO - Starting data acquisition loop...
+2025-11-13 15:26:42,773 - __main__ - INFO - Press Ctrl+C to stop
+
+2025-11-13 15:26:43,774 - __main__ - INFO - 
+============================================================
+2025-11-13 15:26:43,774 - __main__ - INFO - Total samples: 0
+2025-11-13 15:26:43,774 - __main__ - INFO - LSL pushed: 0
+2025-11-13 15:26:43,774 - __main__ - INFO - LSL rate: 0.00 Hz (0.0% of nominal)
+2025-11-13 15:26:43,774 - __main__ - INFO - Saved: 0
+2025-11-13 15:26:43,774 - __main__ - INFO - Buffer: 0
+2025-11-13 15:26:43,774 - __main__ - INFO - ============================================================
+2025-11-13 15:26:43,879 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:43,881 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:43,883 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:43,889 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:43,891 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:43,904 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:43,906 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:43,934 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:43,935 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:43,936 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:43,960 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:43,962 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:43,967 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:43,968 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:43,975 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:43,976 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:44,002 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:44,003 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:44,004 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:44,016 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:44,018 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:44,032 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:44,033 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:44,046 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:44,055 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:44,056 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:44,072 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:44,073 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:44,086 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:44,088 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:44,101 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:44,103 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:44,129 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:44,130 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:44,131 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:44,143 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:44,144 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:44,158 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:44,159 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:44,184 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:44,185 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:44,186 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:44,193 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:44,195 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:44,209 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:44,211 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:44,224 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:44,225 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:44,248 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:44,267 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:44,268 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:44,269 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:44,270 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:44,281 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:44,282 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:44,316 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:44,317 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:44,318 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:44,320 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:44,321 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:44,336 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:44,337 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:44,351 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:44,353 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:44,378 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:44,379 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:44,380 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:44,392 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:44,394 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:44,404 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:44,405 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:44,430 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:44,431 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:44,432 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:44,444 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:44,445 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:44,458 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:44,459 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:44,475 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:44,476 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:44,501 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:44,503 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:44,504 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:44,515 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:44,516 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:44,531 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:44,532 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:44,557 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:44,558 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:44,559 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:44,573 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:44,574 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:44,594 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:44,595 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:44,600 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:44,601 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:44,628 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:44,629 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:44,642 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:44,643 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:44,644 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:44,656 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:44,657 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:44,682 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:44,683 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:44,685 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:44,696 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:44,698 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:44,710 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:44,711 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:44,725 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:44,727 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:44,750 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:44,751 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:44,752 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:44,767 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:44,768 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:44,775 - __main__ - INFO - 
+============================================================
+2025-11-13 15:26:44,775 - __main__ - INFO - Total samples: 0
+2025-11-13 15:26:44,775 - __main__ - INFO - LSL pushed: 0
+2025-11-13 15:26:44,775 - __main__ - INFO - LSL rate: 0.00 Hz (0.0% of nominal)
+2025-11-13 15:26:44,775 - __main__ - INFO - Saved: 0
+2025-11-13 15:26:44,775 - __main__ - INFO - Buffer: 0
+2025-11-13 15:26:44,775 - __main__ - INFO - ============================================================
+2025-11-13 15:26:44,781 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:44,782 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:44,795 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:44,796 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:44,805 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:44,821 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:44,836 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:44,837 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:44,839 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:44,852 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:44,853 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:44,877 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:44,878 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:44,879 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:44,893 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:44,895 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:44,905 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:44,906 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:44,930 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:44,931 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:44,932 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:44,955 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:44,956 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:44,963 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:44,964 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:44,978 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:44,979 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:45,003 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:45,004 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:45,005 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:45,018 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:45,028 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:45,030 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:45,031 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:45,054 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:45,055 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:45,057 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:45,069 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:45,070 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:45,084 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:45,085 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:45,100 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:45,102 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:45,125 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:45,126 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:45,127 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:45,140 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:45,141 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:45,155 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:45,156 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:45,181 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:45,183 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:45,184 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:45,196 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:45,197 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:45,211 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:45,233 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:45,235 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:45,236 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:45,251 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:45,252 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:45,254 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:45,265 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:45,268 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:45,280 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:45,281 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:45,307 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:45,326 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:45,327 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:45,328 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:45,330 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:45,338 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:45,341 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:45,353 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:45,355 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:45,378 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:45,379 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:45,381 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:45,390 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:45,392 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:45,404 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:45,429 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:45,430 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:45,431 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:45,432 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:45,444 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:45,446 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:45,460 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:45,462 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:45,475 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:45,476 - shimmer_device - ERROR - Error extracting sample: cannot unpack non-iterable float object
+2025-11-13 15:26:45,484 - __main__ - INFO - 
+Received interrupt signal. Shutting down...
+2025-11-13 15:26:45,485 - __main__ - INFO - 
+Stopping components...
+2025-11-13 15:26:45,508 - shimmer_device - INFO - Stopped data streaming
+2025-11-13 15:26:45,508 - shimmer_device - INFO - Shimmer device shutdown
+2025-11-13 15:26:45,508 - shimmer_device - INFO - Disconnected from Shimmer device
+2025-11-13 15:26:45,508 - __main__ - INFO - Device disconnected
+2025-11-13 15:26:45,511 - data_saver - INFO - Stopped saving. Total samples saved: 0
+2025-11-13 15:26:45,511 - __main__ - INFO - Data saving stopped
+2025-11-13 15:26:45,511 - __main__ - INFO - Final LSL statistics: {'samples_pushed': 0, 'elapsed_time': 2.784839391708374, 'effective_rate': 0.0, 'nominal_rate': 128.0, 'rate_accuracy': 0.0}
+2025-11-13 15:26:45,511 - lsl_manager - INFO - Destroying LSL outlet. Statistics: {'samples_pushed': 0, 'elapsed_time': 2.784839391708374, 'effective_rate': 0.0, 'nominal_rate': 128.0, 'rate_accuracy': 0.0}
+2025-11-13 15:26:45,536 - __main__ - INFO - LSL outlet destroyed
+2025-11-13 15:26:45,536 - __main__ - INFO - 
+============================================================
+2025-11-13 15:26:45,536 - __main__ - INFO - Session ended. Total samples processed: 0
+2025-11-13 15:26:45,536 - __main__ - INFO - ============================================================
+2025-11-13 15:26:45,537 - __main__ - INFO - 
+Stopping components...
+2025-11-13 15:26:45,537 - shimmer_device - ERROR - Error during disconnect: byref() argument must be a ctypes instance, not 'NoneType'
+2025-11-13 15:26:45,537 - __main__ - INFO - Device disconnected
+2025-11-13 15:26:45,538 - data_saver - INFO - Stopped saving. Total samples saved: 0
+2025-11-13 15:26:45,538 - __main__ - INFO - Data saving stopped
+2025-11-13 15:26:45,538 - __main__ - INFO - Final LSL statistics: {}
+2025-11-13 15:26:45,538 - __main__ - INFO - LSL outlet destroyed
+2025-11-13 15:26:45,538 - __main__ - INFO - 
+============================================================
+2025-11-13 15:26:45,538 - __main__ - INFO - Session ended. Total samples processed: 0
+2025-11-13 15:26:45,538 - __main__ - INFO - ============================================================
+2025-11-13 15:26:45,538 - shimmer_device - ERROR - Error during disconnect: byref() argument must be a ctypes instance, not 'NoneType'

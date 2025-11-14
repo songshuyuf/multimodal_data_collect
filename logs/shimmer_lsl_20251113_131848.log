@@ -1,0 +1,121 @@
+2025-11-13 13:18:48,311 - __main__ - INFO - ============================================================
+2025-11-13 13:18:48,311 - __main__ - INFO - Shimmer GSR+ LSL Integration
+2025-11-13 13:18:48,311 - __main__ - INFO - ============================================================
+2025-11-13 13:18:48,311 - __main__ - INFO - 
+[1/4] Initializing Shimmer GSR+ device...
+2025-11-13 13:18:48,311 - shimmer_device - INFO - Attempting to connect to Shimmer on COM6...
+2025-11-13 13:18:49,808 - shimmer_device - INFO - Initializing Shimmer device...
+2025-11-13 13:18:49,858 - shimmer_device - INFO - Successfully connected and initialized Shimmer on COM6
+2025-11-13 13:18:49,858 - shimmer_device - INFO - Channel names: ['GSR_Skin_Conductance', 'GSR_Skin_Resistance']
+2025-11-13 13:18:49,858 - __main__ - INFO - Device info: {'sampling_rate': 128.0, 'enabled_sensors': ['gsr'], 'channel_names': ['GSR_Skin_Conductance', 'GSR_Skin_Resistance'], 'com_port': 'COM6'}
+2025-11-13 13:18:49,859 - __main__ - INFO - Channels: ['GSR_Skin_Conductance', 'GSR_Skin_Resistance']
+2025-11-13 13:18:49,859 - __main__ - INFO - Sampling rate: 128.0 Hz
+2025-11-13 13:18:49,859 - __main__ - INFO - 
+[2/4] Initializing LSL stream...
+2025-11-13 13:18:49,859 - lsl_manager - INFO - Creating LSL stream: ShimmerGSR
+2025-11-13 13:18:49,859 - lsl_manager - INFO - Channels: 2, Sampling rate: 128.0 Hz
+2025-11-13 13:18:49,872 - lsl_manager - INFO - Added metadata to LSL stream
+2025-11-13 13:18:49,882 - lsl_manager - INFO - LSL outlet created successfully: ShimmerGSR
+2025-11-13 13:18:49,882 - __main__ - INFO - 
+[3/4] Initializing data saver...
+2025-11-13 13:18:49,883 - data_saver - INFO - Created CSV file: ./data\shimmer_gsr_20251113_131849.csv
+2025-11-13 13:18:49,883 - data_saver - INFO - Saved metadata to: ./data\shimmer_gsr_20251113_131849_metadata.json
+2025-11-13 13:18:49,884 - data_saver - INFO - Started saving data to: ./data\shimmer_gsr_20251113_131849.csv
+2025-11-13 13:18:49,884 - __main__ - INFO - 
+[4/4] Starting data streaming...
+2025-11-13 13:18:49,884 - shimmer_device - INFO - Starting data streaming...
+2025-11-13 13:18:49,939 - shimmer_device - INFO - Data streaming started successfully
+2025-11-13 13:18:49,939 - __main__ - INFO - 
+============================================================
+2025-11-13 13:18:49,939 - __main__ - INFO - Initialization complete! Ready to stream data.
+2025-11-13 13:18:49,940 - __main__ - INFO - ============================================================
+
+2025-11-13 13:18:49,940 - __main__ - INFO - Starting data acquisition loop...
+2025-11-13 13:18:49,940 - __main__ - INFO - Press Ctrl+C to stop
+
+2025-11-13 13:18:50,940 - __main__ - INFO - 
+============================================================
+2025-11-13 13:18:50,940 - __main__ - INFO - Total samples: 129
+2025-11-13 13:18:50,940 - __main__ - INFO - LSL pushed: 129
+2025-11-13 13:18:50,940 - __main__ - INFO - LSL rate: 121.86 Hz (95.2% of nominal)
+2025-11-13 13:18:50,940 - __main__ - INFO - Saved: 0
+2025-11-13 13:18:50,940 - __main__ - INFO - Buffer: 129
+2025-11-13 13:18:50,940 - __main__ - INFO - ============================================================
+2025-11-13 13:18:51,942 - __main__ - INFO - 
+============================================================
+2025-11-13 13:18:51,942 - __main__ - INFO - Total samples: 257
+2025-11-13 13:18:51,942 - __main__ - INFO - LSL pushed: 257
+2025-11-13 13:18:51,942 - __main__ - INFO - LSL rate: 124.73 Hz (97.4% of nominal)
+2025-11-13 13:18:51,942 - __main__ - INFO - Saved: 0
+2025-11-13 13:18:51,942 - __main__ - INFO - Buffer: 257
+2025-11-13 13:18:51,942 - __main__ - INFO - ============================================================
+2025-11-13 13:18:52,942 - __main__ - INFO - 
+============================================================
+2025-11-13 13:18:52,942 - __main__ - INFO - Total samples: 382
+2025-11-13 13:18:52,942 - __main__ - INFO - LSL pushed: 382
+2025-11-13 13:18:52,942 - __main__ - INFO - LSL rate: 124.80 Hz (97.5% of nominal)
+2025-11-13 13:18:52,942 - __main__ - INFO - Saved: 0
+2025-11-13 13:18:52,942 - __main__ - INFO - Buffer: 382
+2025-11-13 13:18:52,942 - __main__ - INFO - ============================================================
+2025-11-13 13:18:53,943 - __main__ - INFO - 
+============================================================
+2025-11-13 13:18:53,943 - __main__ - INFO - Total samples: 511
+2025-11-13 13:18:53,943 - __main__ - INFO - LSL pushed: 511
+2025-11-13 13:18:53,943 - __main__ - INFO - LSL rate: 125.82 Hz (98.3% of nominal)
+2025-11-13 13:18:53,943 - __main__ - INFO - Saved: 0
+2025-11-13 13:18:53,943 - __main__ - INFO - Buffer: 511
+2025-11-13 13:18:53,943 - __main__ - INFO - ============================================================
+2025-11-13 13:18:54,944 - __main__ - INFO - 
+============================================================
+2025-11-13 13:18:54,944 - __main__ - INFO - Total samples: 639
+2025-11-13 13:18:54,944 - __main__ - INFO - LSL pushed: 639
+2025-11-13 13:18:54,944 - __main__ - INFO - LSL rate: 126.24 Hz (98.6% of nominal)
+2025-11-13 13:18:54,944 - __main__ - INFO - Saved: 0
+2025-11-13 13:18:54,944 - __main__ - INFO - Buffer: 639
+2025-11-13 13:18:54,944 - __main__ - INFO - ============================================================
+2025-11-13 13:18:55,944 - __main__ - INFO - 
+============================================================
+2025-11-13 13:18:55,944 - __main__ - INFO - Total samples: 767
+2025-11-13 13:18:55,944 - __main__ - INFO - LSL pushed: 767
+2025-11-13 13:18:55,944 - __main__ - INFO - LSL rate: 126.52 Hz (98.8% of nominal)
+2025-11-13 13:18:55,944 - __main__ - INFO - Saved: 0
+2025-11-13 13:18:55,944 - __main__ - INFO - Buffer: 767
+2025-11-13 13:18:55,944 - __main__ - INFO - ============================================================
+2025-11-13 13:18:56,944 - __main__ - INFO - 
+============================================================
+2025-11-13 13:18:56,944 - __main__ - INFO - Total samples: 897
+2025-11-13 13:18:56,944 - __main__ - INFO - LSL pushed: 897
+2025-11-13 13:18:56,944 - __main__ - INFO - LSL rate: 127.01 Hz (99.2% of nominal)
+2025-11-13 13:18:56,944 - __main__ - INFO - Saved: 0
+2025-11-13 13:18:56,944 - __main__ - INFO - Buffer: 897
+2025-11-13 13:18:56,944 - __main__ - INFO - ============================================================
+2025-11-13 13:18:57,381 - __main__ - INFO - 
+Received interrupt signal. Shutting down...
+2025-11-13 13:18:57,381 - __main__ - INFO - 
+Stopping components...
+2025-11-13 13:18:57,409 - shimmer_device - INFO - Stopped data streaming
+2025-11-13 13:18:57,410 - shimmer_device - INFO - Shimmer device shutdown
+2025-11-13 13:18:57,411 - shimmer_device - INFO - Disconnected from Shimmer device
+2025-11-13 13:18:57,411 - __main__ - INFO - Device disconnected
+2025-11-13 13:18:57,417 - data_saver - INFO - Stopped saving. Total samples saved: 952
+2025-11-13 13:18:57,417 - __main__ - INFO - Data saving stopped
+2025-11-13 13:18:57,417 - __main__ - INFO - Final LSL statistics: {'samples_pushed': 952, 'elapsed_time': 7.535384654998779, 'effective_rate': 126.33727985849639, 'nominal_rate': 128.0, 'rate_accuracy': 98.7009998894503}
+2025-11-13 13:18:57,417 - lsl_manager - INFO - Destroying LSL outlet. Statistics: {'samples_pushed': 952, 'elapsed_time': 7.535384654998779, 'effective_rate': 126.33727985849639, 'nominal_rate': 128.0, 'rate_accuracy': 98.7009998894503}
+2025-11-13 13:18:57,443 - __main__ - INFO - LSL outlet destroyed
+2025-11-13 13:18:57,443 - __main__ - INFO - 
+============================================================
+2025-11-13 13:18:57,443 - __main__ - INFO - Session ended. Total samples processed: 952
+2025-11-13 13:18:57,443 - __main__ - INFO - ============================================================
+2025-11-13 13:18:57,443 - __main__ - INFO - 
+Stopping components...
+2025-11-13 13:18:57,443 - shimmer_device - ERROR - Error during disconnect: byref() argument must be a ctypes instance, not 'NoneType'
+2025-11-13 13:18:57,443 - __main__ - INFO - Device disconnected
+2025-11-13 13:18:57,447 - data_saver - INFO - Stopped saving. Total samples saved: 952
+2025-11-13 13:18:57,447 - __main__ - INFO - Data saving stopped
+2025-11-13 13:18:57,447 - __main__ - INFO - Final LSL statistics: {}
+2025-11-13 13:18:57,447 - __main__ - INFO - LSL outlet destroyed
+2025-11-13 13:18:57,447 - __main__ - INFO - 
+============================================================
+2025-11-13 13:18:57,447 - __main__ - INFO - Session ended. Total samples processed: 952
+2025-11-13 13:18:57,447 - __main__ - INFO - ============================================================
+2025-11-13 13:18:57,447 - shimmer_device - ERROR - Error during disconnect: byref() argument must be a ctypes instance, not 'NoneType'

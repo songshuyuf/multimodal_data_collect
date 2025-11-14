@@ -1,0 +1,870 @@
+2025-11-13 15:09:27,599 - __main__ - INFO - ============================================================
+2025-11-13 15:09:27,599 - __main__ - INFO - Shimmer GSR+ LSL Integration
+2025-11-13 15:09:27,599 - __main__ - INFO - ============================================================
+2025-11-13 15:09:27,600 - __main__ - INFO - 
+[1/4] Initializing Shimmer GSR+ device...
+2025-11-13 15:09:27,600 - shimmer_device - INFO - Attempting to connect to Shimmer on COM6...
+2025-11-13 15:09:28,909 - shimmer_device - INFO - Initializing Shimmer device...
+2025-11-13 15:09:28,956 - shimmer_device - INFO - Successfully connected and initialized Shimmer on COM6
+2025-11-13 15:09:28,956 - shimmer_device - INFO - Channel names: ['GSR_Skin_Conductance', 'GSR_Skin_Resistance', 'PPG_A13', 'Accel_LN_X', 'Accel_LN_Y', 'Accel_LN_Z', 'Gyro_X', 'Gyro_Y', 'Gyro_Z', 'Mag_X', 'Mag_Y', 'Mag_Z', 'Temperature_BMP280', 'Pressure_BMP280']
+2025-11-13 15:09:28,957 - __main__ - INFO - Device info: {'sampling_rate': 128.0, 'enabled_sensors': ['gsr', 'ppg', 'accelerometer_ln', 'gyroscope', 'magnetometer', 'temperature', 'pressure'], 'channel_names': ['GSR_Skin_Conductance', 'GSR_Skin_Resistance', 'PPG_A13', 'Accel_LN_X', 'Accel_LN_Y', 'Accel_LN_Z', 'Gyro_X', 'Gyro_Y', 'Gyro_Z', 'Mag_X', 'Mag_Y', 'Mag_Z', 'Temperature_BMP280', 'Pressure_BMP280'], 'com_port': 'COM6'}
+2025-11-13 15:09:28,957 - __main__ - INFO - Channels: ['GSR_Skin_Conductance', 'GSR_Skin_Resistance', 'PPG_A13', 'Accel_LN_X', 'Accel_LN_Y', 'Accel_LN_Z', 'Gyro_X', 'Gyro_Y', 'Gyro_Z', 'Mag_X', 'Mag_Y', 'Mag_Z', 'Temperature_BMP280', 'Pressure_BMP280']
+2025-11-13 15:09:28,957 - __main__ - INFO - Sampling rate: 128.0 Hz
+2025-11-13 15:09:28,957 - __main__ - INFO - 
+[2/4] Initializing LSL stream...
+2025-11-13 15:09:28,957 - lsl_manager - INFO - Creating LSL stream: ShimmerGSR
+2025-11-13 15:09:28,957 - lsl_manager - INFO - Channels: 14, Sampling rate: 128.0 Hz
+2025-11-13 15:09:28,970 - lsl_manager - INFO - Added metadata to LSL stream
+2025-11-13 15:09:28,980 - lsl_manager - INFO - LSL outlet created successfully: ShimmerGSR
+2025-11-13 15:09:28,980 - __main__ - INFO - 
+[3/4] Initializing data saver...
+2025-11-13 15:09:28,981 - data_saver - INFO - Created CSV file: ./data\shimmer_gsr_20251113_150928.csv
+2025-11-13 15:09:28,981 - data_saver - INFO - Saved metadata to: ./data\shimmer_gsr_20251113_150928_metadata.json
+2025-11-13 15:09:28,981 - data_saver - INFO - Started saving data to: ./data\shimmer_gsr_20251113_150928.csv
+2025-11-13 15:09:28,982 - __main__ - INFO - 
+[4/4] Starting data streaming...
+2025-11-13 15:09:28,982 - shimmer_device - INFO - Starting data streaming...
+2025-11-13 15:09:29,035 - shimmer_device - INFO - Data streaming started successfully
+2025-11-13 15:09:29,035 - __main__ - INFO - 
+============================================================
+2025-11-13 15:09:29,035 - __main__ - INFO - Initialization complete! Ready to stream data.
+2025-11-13 15:09:29,035 - __main__ - INFO - ============================================================
+
+2025-11-13 15:09:29,035 - __main__ - INFO - Starting data acquisition loop...
+2025-11-13 15:09:29,035 - __main__ - INFO - Press Ctrl+C to stop
+
+2025-11-13 15:09:30,036 - __main__ - INFO - 
+============================================================
+2025-11-13 15:09:30,036 - __main__ - INFO - Total samples: 0
+2025-11-13 15:09:30,036 - __main__ - INFO - LSL pushed: 0
+2025-11-13 15:09:30,036 - __main__ - INFO - LSL rate: 0.00 Hz (0.0% of nominal)
+2025-11-13 15:09:30,036 - __main__ - INFO - Saved: 0
+2025-11-13 15:09:30,036 - __main__ - INFO - Buffer: 0
+2025-11-13 15:09:30,036 - __main__ - INFO - ============================================================
+2025-11-13 15:09:30,136 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:30,139 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:30,140 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:30,143 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:30,144 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:30,175 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:30,177 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:30,178 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:30,183 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:30,185 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:30,201 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:30,202 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:30,215 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:30,217 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:30,242 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:30,243 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:30,244 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:30,257 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:30,258 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:30,272 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:30,273 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:30,297 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:30,298 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:30,299 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:30,333 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:30,334 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:30,335 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:30,336 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:30,339 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:30,340 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:30,364 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:30,366 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:30,367 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:30,385 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:30,387 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:30,398 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:30,400 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:30,414 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:30,416 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:30,419 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:30,435 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:30,436 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:30,450 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:30,451 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:30,465 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:30,466 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:30,490 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:30,492 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:30,494 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:30,527 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:30,528 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:30,529 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:30,531 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:30,552 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:30,554 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:30,555 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:30,557 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:30,559 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:30,574 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:30,575 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:30,590 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:30,591 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:30,615 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:30,616 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:30,618 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:30,629 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:30,630 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:30,647 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:30,648 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:30,691 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:30,692 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:30,693 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:30,695 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:30,696 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:30,699 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:30,701 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:30,713 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:30,715 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:30,738 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:30,739 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:30,741 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:30,753 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:30,755 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:30,767 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:30,769 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:30,795 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:30,796 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:30,798 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:30,808 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:30,810 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:30,824 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:30,826 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:30,839 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:30,841 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:30,866 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:30,868 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:30,869 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:30,880 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:30,895 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:30,896 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:30,897 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:30,922 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:30,923 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:30,925 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:30,937 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:30,939 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:30,951 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:30,952 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:30,967 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:30,968 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:30,991 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:30,993 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:30,994 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:31,003 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:31,004 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:31,029 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:31,030 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:31,036 - __main__ - INFO - 
+============================================================
+2025-11-13 15:09:31,036 - __main__ - INFO - Total samples: 117
+2025-11-13 15:09:31,036 - __main__ - INFO - LSL pushed: 0
+2025-11-13 15:09:31,036 - __main__ - INFO - LSL rate: 0.00 Hz (0.0% of nominal)
+2025-11-13 15:09:31,036 - __main__ - INFO - Saved: 0
+2025-11-13 15:09:31,036 - __main__ - INFO - Buffer: 117
+2025-11-13 15:09:31,036 - __main__ - INFO - ============================================================
+2025-11-13 15:09:31,045 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:31,046 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:31,047 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:31,060 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:31,061 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:31,077 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:31,091 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:31,092 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:31,094 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:31,117 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:31,119 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:31,121 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:31,128 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:31,130 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:31,145 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:31,147 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:31,169 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:31,170 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:31,172 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:31,183 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:31,184 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:31,200 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:31,201 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:31,215 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:31,217 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:31,240 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:31,241 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:31,243 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:31,255 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:31,257 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:31,270 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:31,296 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:31,297 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:31,299 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:31,300 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:31,330 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:31,331 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:31,336 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:31,338 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:31,339 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:31,340 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:31,366 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:31,367 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:31,368 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:31,380 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:31,381 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:31,395 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:31,396 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:31,420 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:31,421 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:31,422 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:31,433 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:31,435 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:31,448 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:31,449 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:31,463 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:31,487 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:31,488 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:31,489 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:31,491 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:31,504 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:31,505 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:31,519 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:31,520 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:31,545 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:31,546 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:31,547 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:31,559 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:31,560 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:31,576 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:31,577 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:31,592 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:31,593 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:31,616 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:31,618 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:31,619 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:31,631 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:31,632 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:31,659 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:31,661 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:31,674 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:31,683 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:31,684 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:31,685 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:31,687 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:31,698 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:31,699 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:31,714 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:31,715 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:31,740 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:31,742 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:31,743 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:31,758 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:31,759 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:31,771 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:31,772 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:31,800 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:31,801 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:31,803 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:31,809 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:31,810 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:31,824 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:31,825 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:31,840 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:31,841 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:31,866 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:31,880 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:31,881 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:31,882 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:31,883 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:31,896 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:31,897 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:31,921 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:31,922 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:31,924 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:31,936 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:31,937 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:31,963 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:31,964 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:31,976 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:31,977 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:31,979 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:31,988 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:31,990 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:32,003 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:32,004 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:32,019 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:32,020 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:32,036 - __main__ - INFO - 
+============================================================
+2025-11-13 15:09:32,036 - __main__ - INFO - Total samples: 245
+2025-11-13 15:09:32,036 - __main__ - INFO - LSL pushed: 0
+2025-11-13 15:09:32,036 - __main__ - INFO - LSL rate: 0.00 Hz (0.0% of nominal)
+2025-11-13 15:09:32,036 - __main__ - INFO - Saved: 0
+2025-11-13 15:09:32,036 - __main__ - INFO - Buffer: 245
+2025-11-13 15:09:32,036 - __main__ - INFO - ============================================================
+2025-11-13 15:09:32,043 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:32,044 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:32,046 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:32,075 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:32,076 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:32,077 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:32,079 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:32,090 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:32,092 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:32,115 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:32,116 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:32,117 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:32,132 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:32,133 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:32,146 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:32,147 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:32,174 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:32,175 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:32,177 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:32,183 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:32,184 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:32,200 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:32,202 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:32,216 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:32,217 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:32,242 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:32,244 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:32,245 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:32,271 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:32,273 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:32,274 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:32,275 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:32,298 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:32,299 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:32,300 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:32,307 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:32,309 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:32,323 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:32,325 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:32,339 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:32,341 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:32,364 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:32,366 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:32,367 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:32,384 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:32,385 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:32,392 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:32,393 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:32,419 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:32,420 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:32,422 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:32,435 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:32,436 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:32,462 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:32,464 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:32,465 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:32,466 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:32,489 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:32,491 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:32,492 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:32,505 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:32,507 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:32,519 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:32,520 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:32,549 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:32,551 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:32,552 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:32,561 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:32,562 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:32,575 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:32,577 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:32,610 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:32,611 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:32,612 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:32,618 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:32,620 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:32,628 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:32,630 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:32,686 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:32,687 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:32,689 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:32,691 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:32,692 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:32,693 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:32,695 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:32,700 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:32,701 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:32,716 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:32,717 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:32,741 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:32,742 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:32,744 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:32,757 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:32,758 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:32,772 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:32,773 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:32,796 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:32,797 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:32,798 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:32,811 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:32,812 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:32,827 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:32,828 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:32,865 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:32,866 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:32,867 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:32,869 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:32,870 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:32,881 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:32,882 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:32,893 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:32,894 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:32,919 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:32,920 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:32,921 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:32,943 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:32,944 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:32,952 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:32,954 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:32,965 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:32,966 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:32,989 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:32,991 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:32,992 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:33,003 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:33,004 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:33,023 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:33,026 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:33,036 - __main__ - INFO - 
+============================================================
+2025-11-13 15:09:33,036 - __main__ - INFO - Total samples: 373
+2025-11-13 15:09:33,036 - __main__ - INFO - LSL pushed: 0
+2025-11-13 15:09:33,036 - __main__ - INFO - LSL rate: 0.00 Hz (0.0% of nominal)
+2025-11-13 15:09:33,036 - __main__ - INFO - Saved: 0
+2025-11-13 15:09:33,036 - __main__ - INFO - Buffer: 373
+2025-11-13 15:09:33,036 - __main__ - INFO - ============================================================
+2025-11-13 15:09:33,059 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:33,061 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:33,062 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:33,063 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:33,065 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:33,073 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:33,074 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:33,087 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:33,088 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:33,117 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:33,119 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:33,121 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:33,131 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:33,132 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:33,145 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:33,147 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:33,172 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:33,173 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:33,174 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:33,188 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:33,189 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:33,202 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:33,204 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:33,217 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:33,218 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:33,254 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:33,256 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:33,257 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:33,258 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:33,259 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:33,271 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:33,272 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:33,296 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:33,298 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:33,299 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:33,313 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:33,314 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:33,324 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:33,325 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:33,337 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:33,339 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:33,363 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:33,364 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:33,366 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:33,380 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:33,382 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:33,395 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:33,396 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:33,419 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:33,420 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:33,437 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:33,438 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:33,439 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:33,448 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:33,449 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:33,463 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:33,465 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:33,488 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:33,489 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:33,490 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:33,503 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:33,504 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:33,520 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:33,521 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:33,546 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:33,547 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:33,549 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:33,558 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:33,560 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:33,590 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:33,592 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:33,594 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:33,595 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:33,606 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:33,607 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:33,628 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:33,629 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:33,631 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:33,644 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:33,645 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:33,668 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:33,669 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:33,670 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:33,683 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:33,684 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:33,697 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:33,698 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:33,714 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:33,723 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:33,741 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:33,743 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:33,744 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:33,758 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:33,759 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:33,771 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:33,772 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:33,798 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:33,799 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:33,800 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:33,807 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:33,822 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:33,824 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:33,826 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:33,838 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:33,839 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:33,868 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:33,869 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:33,870 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:33,891 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:33,893 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:33,896 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:33,898 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:33,921 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:33,923 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:33,924 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:33,933 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:33,934 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:33,948 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:33,949 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:33,968 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:33,969 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:33,992 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:33,994 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:33,995 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:34,004 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:34,019 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:34,020 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:34,021 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:34,037 - __main__ - INFO - 
+============================================================
+2025-11-13 15:09:34,037 - __main__ - INFO - Total samples: 501
+2025-11-13 15:09:34,037 - __main__ - INFO - LSL pushed: 0
+2025-11-13 15:09:34,037 - __main__ - INFO - LSL rate: 0.00 Hz (0.0% of nominal)
+2025-11-13 15:09:34,037 - __main__ - INFO - Saved: 0
+2025-11-13 15:09:34,037 - __main__ - INFO - Buffer: 501
+2025-11-13 15:09:34,037 - __main__ - INFO - ============================================================
+2025-11-13 15:09:34,046 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:34,047 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:34,048 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:34,062 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:34,063 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:34,076 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:34,077 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:34,093 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:34,094 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:34,117 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:34,118 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:34,120 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:34,134 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:34,135 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:34,145 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:34,146 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:34,176 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:34,177 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:34,179 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:34,186 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:34,187 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:34,200 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:34,226 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:34,227 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:34,228 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:34,241 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:34,242 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:34,243 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:34,257 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:34,259 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:34,270 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:34,272 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:34,295 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:34,296 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:34,298 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:34,310 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:34,312 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:34,325 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:34,326 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:34,341 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:34,342 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:34,350 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:34,362 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:34,363 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:34,380 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:34,382 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:34,397 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:34,422 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:34,423 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:34,424 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:34,425 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:34,436 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:34,438 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:34,451 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:34,453 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:34,466 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:34,468 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:34,496 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:34,497 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:34,498 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:34,526 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:34,527 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:34,529 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:34,530 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:34,544 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:34,545 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:34,546 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:34,559 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:34,561 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:34,574 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:34,575 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:34,592 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:34,616 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:34,618 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:34,619 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:34,621 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:34,627 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:34,628 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:34,643 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:34,645 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:34,668 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:34,670 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:34,671 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:34,686 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:34,688 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:34,701 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:34,702 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:34,716 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:34,717 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:34,749 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:34,760 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:34,762 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:34,763 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:34,764 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:34,767 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:34,769 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:34,793 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:34,809 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:34,810 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:34,811 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:34,812 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:34,822 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:34,825 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:34,840 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:34,841 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:34,866 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:34,867 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:34,868 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:34,881 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:34,882 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:34,897 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:34,898 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:34,923 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:34,924 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:34,925 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:34,934 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:34,935 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:34,947 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:34,948 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:34,963 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:34,965 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:34,989 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:35,006 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:35,007 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:35,008 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:35,010 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:35,021 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:35,022 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:35,038 - __main__ - INFO - 
+============================================================
+2025-11-13 15:09:35,038 - __main__ - INFO - Total samples: 629
+2025-11-13 15:09:35,038 - __main__ - INFO - LSL pushed: 0
+2025-11-13 15:09:35,038 - __main__ - INFO - LSL rate: 0.00 Hz (0.0% of nominal)
+2025-11-13 15:09:35,038 - __main__ - INFO - Saved: 0
+2025-11-13 15:09:35,038 - __main__ - INFO - Buffer: 629
+2025-11-13 15:09:35,038 - __main__ - INFO - ============================================================
+2025-11-13 15:09:35,046 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:35,047 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:35,048 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:35,062 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:35,063 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:35,078 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:35,079 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:35,092 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:35,093 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:35,117 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:35,119 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:35,120 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:35,129 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:35,130 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:35,171 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:35,172 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:35,173 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:35,178 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:35,179 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:35,199 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:35,200 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:35,201 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:35,202 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:35,214 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:35,215 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:35,240 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:35,242 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:35,243 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:35,256 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:35,257 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:35,272 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:35,273 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:35,295 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:35,296 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:35,297 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:35,310 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:35,311 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:35,323 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:35,324 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:35,338 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:35,339 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:35,363 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:35,364 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:35,365 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:35,395 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:35,397 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:35,398 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:35,399 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:35,423 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:35,425 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:35,426 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:35,434 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:35,436 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:35,449 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:35,450 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:35,464 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:35,465 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:35,490 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:35,491 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:35,492 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:35,509 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:35,510 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:35,519 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:35,520 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:35,548 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:35,549 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:35,551 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:35,558 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:35,559 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:35,597 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:35,598 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:35,599 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:35,600 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:35,601 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:35,615 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:35,617 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:35,629 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:35,631 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:35,645 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:35,646 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:35,671 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:35,672 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:35,674 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:35,686 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:35,687 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:35,697 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:35,698 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:35,714 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:35,715 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:35,749 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:35,755 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:35,757 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:35,762 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:35,763 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:35,800 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:35,806 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:35,809 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:35,812 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:35,833 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:35,838 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:35,839 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:35,840 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:35,842 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:35,843 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:35,845 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:35,853 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:35,871 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:35,873 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:35,883 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:35,885 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:35,897 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:35,899 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:35,921 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:35,923 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:35,924 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:35,934 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:35,935 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:35,950 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:35,951 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:35,977 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:35,978 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:35,979 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:35,991 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:35,992 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:36,005 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:36,007 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:36,021 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:36,023 - lsl_manager - ERROR - Error pushing sample: length of the sample (11) must correspond to the stream's channel count (14).
+2025-11-13 15:09:36,030 - __main__ - INFO - 
+Received interrupt signal. Shutting down...
+2025-11-13 15:09:36,030 - __main__ - INFO - 
+Stopping components...
+2025-11-13 15:09:36,053 - shimmer_device - INFO - Stopped data streaming
+2025-11-13 15:09:36,053 - shimmer_device - INFO - Shimmer device shutdown
+2025-11-13 15:09:36,053 - shimmer_device - INFO - Disconnected from Shimmer device
+2025-11-13 15:09:36,054 - __main__ - INFO - Device disconnected
+2025-11-13 15:09:36,059 - data_saver - INFO - Stopped saving. Total samples saved: 757
+2025-11-13 15:09:36,059 - __main__ - INFO - Data saving stopped
+2025-11-13 15:09:36,059 - __main__ - INFO - Final LSL statistics: {'samples_pushed': 0, 'elapsed_time': 7.078790187835693, 'effective_rate': 0.0, 'nominal_rate': 128.0, 'rate_accuracy': 0.0}
+2025-11-13 15:09:36,059 - lsl_manager - INFO - Destroying LSL outlet. Statistics: {'samples_pushed': 0, 'elapsed_time': 7.078790187835693, 'effective_rate': 0.0, 'nominal_rate': 128.0, 'rate_accuracy': 0.0}
+2025-11-13 15:09:36,085 - __main__ - INFO - LSL outlet destroyed
+2025-11-13 15:09:36,085 - __main__ - INFO - 
+============================================================
+2025-11-13 15:09:36,085 - __main__ - INFO - Session ended. Total samples processed: 757
+2025-11-13 15:09:36,085 - __main__ - INFO - ============================================================
+2025-11-13 15:09:36,085 - __main__ - INFO - 
+Stopping components...
+2025-11-13 15:09:36,085 - shimmer_device - ERROR - Error during disconnect: byref() argument must be a ctypes instance, not 'NoneType'
+2025-11-13 15:09:36,085 - __main__ - INFO - Device disconnected
+2025-11-13 15:09:36,087 - data_saver - INFO - Stopped saving. Total samples saved: 757
+2025-11-13 15:09:36,087 - __main__ - INFO - Data saving stopped
+2025-11-13 15:09:36,087 - __main__ - INFO - Final LSL statistics: {}
+2025-11-13 15:09:36,087 - __main__ - INFO - LSL outlet destroyed
+2025-11-13 15:09:36,087 - __main__ - INFO - 
+============================================================
+2025-11-13 15:09:36,087 - __main__ - INFO - Session ended. Total samples processed: 757
+2025-11-13 15:09:36,087 - __main__ - INFO - ============================================================
+2025-11-13 15:09:36,087 - shimmer_device - ERROR - Error during disconnect: byref() argument must be a ctypes instance, not 'NoneType'

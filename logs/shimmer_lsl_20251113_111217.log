@@ -1,0 +1,9 @@
+2025-11-13 11:12:17,077 - __main__ - INFO - ============================================================
+2025-11-13 11:12:17,077 - __main__ - INFO - Shimmer GSR+ LSL Integration
+2025-11-13 11:12:17,077 - __main__ - INFO - ============================================================
+2025-11-13 11:12:17,077 - __main__ - INFO - 
+[1/4] Initializing Shimmer GSR+ device...
+2025-11-13 11:12:17,077 - shimmer_device - INFO - Attempting to connect to Shimmer on COM6...
+2025-11-13 11:12:22,266 - shimmer_device - ERROR - Failed to connect to Shimmer: could not open port 'COM6': OSError(22, '信号灯超时时间已到', None, 121)
+2025-11-13 11:12:22,268 - __main__ - ERROR - Failed to connect to Shimmer device
+2025-11-13 11:12:22,269 - shimmer_device - INFO - Disconnected from Shimmer device
