@@ -8,10 +8,10 @@ import os
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from database.database_manager import DatabaseManager
-from database.models import Patient, Session
-from managers.file_manager import FileManager
-from managers.session_manager import SessionManager
+from data.database import DatabaseManager
+from data.models import Patient, Session
+from data.files import FileManager
+from data.session import SessionManager
 from datetime import datetime
 
 

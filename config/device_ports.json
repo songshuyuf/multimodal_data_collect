@@ -1,0 +1,8 @@
+{
+  "shimmer_emg": {
+    "port": "COM7"
+  },
+  "shimmer_gsr": {
+    "port": "COM10"
+  }
+}

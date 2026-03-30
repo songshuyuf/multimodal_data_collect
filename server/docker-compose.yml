@@ -1,0 +1,62 @@
+services:
+  # ── PostgreSQL 数据库 ──
+  postgres:
+    image: postgres:16-alpine
+    container_name: art_treat_db
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: art_treat
+      POSTGRES_USER: art_treat
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-art_treat_2026}
+    volumes:
+      - pg_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U art_treat"]
+      interval: 5s
+      timeout: 3s
+      retries: 5
+
+  # ── MinIO 对象存储 ──
+  minio:
+    image: minio/minio:latest
+    container_name: art_treat_minio
+    restart: unless-stopped
+    command: server /data --console-address ":9001"
+    environment:
+      MINIO_ROOT_USER: ${MINIO_ROOT_USER:-minioadmin}
+      MINIO_ROOT_PASSWORD: ${MINIO_ROOT_PASSWORD:-minioadmin2026}
+    volumes:
+      - minio_data:/data
+    ports:
+      - "9000:9000"
+      - "9001:9001"
+    healthcheck:
+      test: ["CMD", "mc", "ready", "local"]
+      interval: 10s
+      timeout: 3s
+      retries: 5
+
+  # ── FastAPI 应用 ──
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: art_treat_api
+    restart: unless-stopped
+    env_file: .env
+    ports:
+      - "8000:8000"
+    depends_on:
+      postgres:
+        condition: service_healthy
+      minio:
+        condition: service_healthy
+    volumes:
+      - upload_tmp:/tmp/uploads
+
+volumes:
+  pg_data:
+  minio_data:
+  upload_tmp:

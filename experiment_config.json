@@ -1,0 +1,186 @@
+{
+  "experiment_name": "AI艺术诊疗多模态实验",
+  "version": "2.0",
+  "total_duration": 2400,
+  "description": "约40分钟多模态情绪实验范式（静息态EEG + Dot-probe + 绘画 + 音乐 + VR + 语音×3）",
+
+  "tasks": [
+
+    {
+      "id": 1,
+      "name": "rest",
+      "display_name": "静息态EEG",
+      "duration": 300,
+      "description": "睁眼/闭眼交替，共5周期。闭眼40s×5 + 睁眼20s×5 = 300s",
+      "literature": "Popov et al., 2023; Janssen et al., 2024; Deng et al., 2021",
+      "params": {
+        "eyes_open_duration": 20,
+        "eyes_close_duration": 40,
+        "cycles": 5
+      }
+    },
+
+    {
+      "id": 2,
+      "name": "dotprobe",
+      "display_name": "Dot-probe任务",
+      "duration": 300,
+      "description": "200试次，刺激500ms，试次间隔1000ms。总时长约300s",
+      "literature": "Cohen et al., 2014; Zhang et al., 2019",
+      "params": {
+        "n_trials": 200,
+        "stim_duration": 500,
+        "iti": 1000,
+        "face_category": "negative",
+        "dataset": "gaped"
+      }
+    },
+
+    {
+      "id": 3,
+      "name": "painting",
+      "display_name": "绘画作品欣赏",
+      "duration": 297,
+      "description": "30张绘画，单张呈现7s，间隔3s。总时长=30×7 + 29×3 = 297s≈5min",
+      "literature": "Blanco et al., 2025; Espada, 2020",
+      "params": {
+        "n_images": 30,
+        "display_duration": 7000,
+        "isi": 3000,
+        "dataset": "wikiart",
+        "random_sample": true
+      }
+    },
+
+    {
+      "id": 4,
+      "name": "music",
+      "display_name": "音乐欣赏",
+      "duration": 485,
+      "description": "9首音乐，每首45s，间隔10s。总时长=9×45 + 8×10 = 485s≈8min",
+      "literature": "Warrenburg, 2020; Wu et al., 2025",
+      "params": {
+        "n_clips": 9,
+        "clip_duration": 45000,
+        "isi": 10000,
+        "datasets": ["deam", "emotify"],
+        "random_sample": true
+      }
+    },
+
+    {
+      "id": 5,
+      "name": "video",
+      "display_name": "VR沉浸体验",
+      "duration": 180,
+      "description": "1段3分钟VR视频（已剪辑为180s）。超过3min易产生眩晕",
+      "literature": "Thorp et al., 2022",
+      "params": {
+        "n_videos": 1,
+        "max_duration": 180,
+        "dataset": "chsims",
+        "strategy": "single_segment"
+      }
+    },
+
+    {
+      "id": 6,
+      "name": "voice_reading",
+      "display_name": "语音任务A：朗读",
+      "duration": 180,
+      "description": "朗读约200字文本，以正常语速朗读，共约3min",
+      "literature": "Dibeklioğlu et al., 2017; LJSpeech",
+      "params": {
+        "text_file": "voice_tasks/reading_text.txt",
+        "target_words": 200,
+        "record_audio": true
+      }
+    },
+
+    {
+      "id": 7,
+      "name": "voice_interview",
+      "display_name": "语音任务B：访谈",
+      "duration": 180,
+      "description": "3个核心问题，每题约60s，总时长约3min",
+      "literature": "Dibeklioğlu et al., 2017; DSM半结构化访谈",
+      "params": {
+        "questions_file": "voice_tasks/interview_questions.json",
+        "n_questions": 3,
+        "per_question_duration": 60,
+        "record_audio": true
+      }
+    },
+
+    {
+      "id": 8,
+      "name": "voice_describe",
+      "display_name": "语音任务C：图像描述",
+      "duration": 180,
+      "description": "描述4张图片内容，每张约45s，总时长约3min",
+      "literature": "AVEC 2014; LJSpeech",
+      "params": {
+        "n_images": 4,
+        "images_dir": "dataset/picture/description",
+        "per_image_duration": 45,
+        "record_audio": true
+      }
+    }
+
+  ],
+
+  "rest_breaks": [
+    {
+      "after_task": 2,
+      "duration": 10,
+      "message": "稍作准备，接下来将欣赏绘画作品",
+      "note": "保持EEG帽/耳机，仅告知下一任务，避免头部移动"
+    },
+    {
+      "after_task": 3,
+      "duration": 30,
+      "message": "请稍作休息，工作人员将协助您戴好隔音耳机",
+      "note": "统一耳机响度，准备音乐任务"
+    },
+    {
+      "after_task": 5,
+      "duration": 30,
+      "message": "请稍作休息，工作人员将协助您摘除VR头显",
+      "note": "询问被试眩晕感，调试麦克风，准备语音任务"
+    }
+  ],
+
+  "marker_config": {
+    "enabled": true,
+    "save_log": true,
+    "log_filename": "markers_{timestamp}.csv"
+  },
+
+  "stimulus_config": {
+    "fullscreen": false,
+    "window_size": [800, 600],
+    "background_color": "black",
+    "text_color": "white",
+    "text_size": 32,
+    "fixation_size": 64
+  },
+
+  "timing_summary": {
+    "task_1_rest":          "300s  (5.0 min)",
+    "break_10s":            "10s",
+    "task_2_dotprobe":      "300s  (5.0 min)",
+    "break_10s_2":          "10s",
+    "task_3_painting":      "297s  (5.0 min)",
+    "break_30s":            "30s",
+    "task_4_music":         "485s  (8.1 min)",
+    "break_30s_2":          "30s  (VR准备)",
+    "task_5_vr":            "180s  (3.0 min)",
+    "break_30s_3":          "30s  (语音准备)",
+    "task_6_voice_reading": "180s  (3.0 min)",
+    "task_7_voice_interview":"180s (3.0 min)",
+    "task_8_voice_describe": "180s (3.0 min)",
+    "subtotal":             "2222s",
+    "tts_overhead_est":     "~60s",
+    "total_estimate":       "~2282s ≈ 38 min（含缓冲约40min）"
+  }
+}

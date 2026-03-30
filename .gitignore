@@ -1,0 +1,58 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.egg-info/
+dist/
+build/
+*.spec
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Environment
+.env
+venv/
+.venv/
+
+# OS
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Node (web frontend)
+web/node_modules/
+web/.next/
+web/out/
+
+# Data & test output (large / machine-specific)
+data/sessions/
+data/dual_test/
+data/eeg_test/
+data/emg_test/
+data/default_session/
+data/shimmer/
+data/database/patients.db
+*.mp4
+*.avi
+*.wav
+*.dat
+
+# Large dataset / resources (keep in local only)
+dataset/
+ai_login_frontend/
+
+# VR platform tools (binary)
+vr/platform-tools/
+
+# Build artifacts
+output/
+innosetup-*.exe
+
+# Misc
+.pytest_cache/
+.cursorignore
+debug_output.txt

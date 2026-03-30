@@ -13,6 +13,14 @@ scipy>=1.7.0                # 音频处理
 pylsl>=1.14.0               # LSL同步框架
 pynput>=1.7.0               # 键盘控制
 
+# 自动更新
+packaging>=21.0              # 版本号比较
+requests>=2.28.0             # HTTP 客户端
+
+# 构建工具（开发时安装）
+# pyinstaller>=6.0
+# Pillow>=10.0
+
 # 可选依赖（如果你的Shimmer需要）
 # pyserial>=3.5              # 串口通信
 # bluetooth>=0.22            # 蓝牙通信
