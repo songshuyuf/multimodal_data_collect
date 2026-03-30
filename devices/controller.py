@@ -76,23 +76,18 @@ try:
 except ImportError as e:
     print(f"⚠ 数据保存器不可用: {e}")
 
-from devices.mock import MockHEEGDevice, MockShimmerDevice
-
-
 class DeviceController:
     """设备控制器 - 管理所有采集设备"""
 
-    def __init__(self, session_paths: Dict[str, str] = None, use_mock_devices: bool = True):
+    def __init__(self, session_paths: Dict[str, str] = None, **_kw):
         """
         初始化设备控制器
 
         Args:
             session_paths: 会话数据路径字典
-            use_mock_devices: 是否使用模拟设备
         """
         self.logger = logging.getLogger(__name__)
         self.session_paths = session_paths
-        self.use_mock_devices = use_mock_devices
 
         # 设备状态
         self.devices_initialized = False
@@ -148,11 +143,6 @@ class DeviceController:
         self.shimmer_emg_csv_writer = None
         self.video_writer = None
         self.audio_wave_file = None
-
-        if self.use_mock_devices:
-            print("\n" + "=" * 60)
-            print("⚠️  模拟设备模式")
-            print("=" * 60 + "\n")
 
     def set_status_callback(self, callback: Callable):
         """设置状态回调"""
@@ -246,10 +236,8 @@ class DeviceController:
                 return False
 
             else:
-                time.sleep(0.5)
-                self.shimmer_connected = True
-                self._update_status("✓ Shimmer GSR+ 已连接（模拟）")
-                return True
+                self._update_status("✗ Shimmer GSR 驱动不可用")
+                return False
 
         except Exception as e:
             self._update_status(f"✗ Shimmer GSR 连接失败: {e}")
@@ -350,10 +338,8 @@ class DeviceController:
                 return False
 
             else:
-                time.sleep(0.5)
-                self.shimmer_emg_connected = True
-                self._update_status("✓ Shimmer EMG 已连接（模拟）")
-                return True
+                self._update_status("✗ Shimmer EMG 驱动不可用")
+                return False
 
         except Exception as e:
             self._update_status(f"✗ Shimmer EMG 连接失败: {e}")
@@ -404,9 +390,8 @@ class DeviceController:
 
                 return result.get("ok", False)
             else:
-                self.video_connected = True
-                self._update_status("✓ 视频设备已连接 (模拟)")
-                return True
+                self._update_status("✗ 视频驱动不可用")
+                return False
 
         except Exception as e:
             self._update_status(f"✗ 视频连接失败: {e}")
@@ -424,12 +409,10 @@ class DeviceController:
                     self.audio_connected = True
                     self._update_status("✓ 音频设备已连接")
                     return True
+                return False
             else:
-                self.audio_connected = True
-                self._update_status("✓ 音频设备已连接 (模拟)")
-                return True
-
-            return False
+                self._update_status("✗ 音频驱动不可用")
+                return False
 
         except Exception as e:
             self._update_status(f"✗ 音频连接失败: {e}")
@@ -440,12 +423,8 @@ class DeviceController:
         try:
             self._update_status("正在初始化 Neuracle HEEG 设备...")
 
-            if self.use_mock_devices or not HEEG_AVAILABLE:
-                self.heeg_device = MockHEEGDevice(2000, 64)
-                if self.heeg_device.connect():
-                    self.heeg_connected = True
-                    self._update_status("✓ HEEG设备已连接（模拟）")
-                    return True
+            if not HEEG_AVAILABLE:
+                self._update_status("✗ HEEG 驱动不可用")
                 return False
 
             from devices.heeg import NeuracleHEEGDevice

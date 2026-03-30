@@ -175,10 +175,8 @@ class DevicePanel(HeaderCardWidget):
 
     def _ensure_device_controller(self):
         if self.device_controller is None:
-            import os
             from devices.controller import DeviceController
-            use_mock = os.environ.get("AI_ART_MOCK", "0") == "1"
-            self.device_controller = DeviceController(use_mock_devices=use_mock)
+            self.device_controller = DeviceController()
             self.device_controller.set_status_callback(
                 lambda msg: self.log_message.emit(msg)
             )
