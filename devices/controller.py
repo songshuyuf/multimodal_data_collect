@@ -1094,6 +1094,28 @@ class DeviceController:
 
     # ==================== 实时数据 ====================
 
+    @property
+    def heeg_ready(self) -> bool:
+        """EEG Tab 用来判断设备是否可用"""
+        if not self.heeg_connected or not self.heeg_device:
+            return False
+        if hasattr(self.heeg_device, 'state'):
+            from devices.heeg import HEEGState
+            return self.heeg_device.state in (HEEGState.READY, HEEGState.RUNNING)
+        return True
+
+    def get_realtime_heeg_data(self, num_samples: int = 2000):
+        """获取 EEG 实时数据供前端绘图
+
+        Returns:
+            numpy array (channels, samples) 或 None
+        """
+        if not self.heeg_connected or not self.heeg_device:
+            return None
+        if hasattr(self.heeg_device, 'get_latest_data'):
+            return self.heeg_device.get_latest_data(num_samples)
+        return None
+
     def get_latest_video_frame(self):
         """获取最新视频帧"""
         with self.frame_lock:
