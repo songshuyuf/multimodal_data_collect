@@ -36,13 +36,12 @@ data/emg_test/
 data/default_session/
 data/shimmer/
 data/database/patients.db
-*.mp4
 *.avi
 *.wav
-*.dat
 
-# Large dataset / resources (keep in local only)
-dataset/
+# Dataset — only exclude the huge VR research data
+dataset/VR/
+dataset/results/
 ai_login_frontend/
 
 # VR platform tools (binary)

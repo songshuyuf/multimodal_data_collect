@@ -1,0 +1,31 @@
+﻿display_order,dst_filename,group,emotion,valence,arousal,healing,style,artist,rel_path
+1,01_0033856_ThomasDowning-RedSpan.jpg,正性/高唤醒,Excited,Positive,High,Gain Inspiration; Embrace Joy,Hard Edge Painting,ThomasDowning,Images\Hard Edge Painting\0033856_ThomasDowning-RedSpan.jpg
+2,02_0014640_AntonioLopezGarcia-Atocha.jpg,负性/低唤醒,Sad,Negative,Low,Overcome Sadness,Magic Realism,AntonioLopezGarcia,Images\Magic Realism\0014640_AntonioLopezGarcia-Atocha.jpg
+3,03_duk000903-011-0001.jpg,正性/低唤醒,Calm,Positive,Low,Relieve Stress; Find Hope,Korea,duk000903-011-0001,Images\Korea\duk000903-011-0001.jpg
+4,04_0017416_MaxBill-GrünerKern.jpg,负性/低唤醒,Sad,Negative,Low,Find Hope; Overcome Sadness,Concretism,MaxBill,Images\Concretism\0017416_MaxBill-GrünerKern.jpg
+5,05_0024945_FikretMuallaSaygi-PinkCafe.jpg,正性/高唤醒,Excited,Positive,High,Embrace Joy; Gain Inspiration,Fauvism,FikretMuallaSaygi,Images\Fauvism\0024945_FikretMuallaSaygi-PinkCafe.jpg
+6,06_0070327_GeorgeLuks-AClown.jpg,负性/低唤醒,Bored,Negative,Low,Overcome Sadness,New Realism,GeorgeLuks,Images\New Realism\0070327_GeorgeLuks-AClown.jpg
+7,07_0020095_NatoriShunsen-IchikawaSadanjiasNarukami.jpg,正性/高唤醒,Excited,Positive,High,Gain Inspiration; Embrace Joy,Shin-hanga,NatoriShunsen,Images\Shin-hanga\0020095_NatoriShunsen-IchikawaSadanjiasNarukami.jpg
+8,08_0028983_DavidAlfaroSiqueiros-TheChildMother.jpg,负性/高唤醒,Frustrated,Negative,High,Overcome Sadness; Find Hope,Social Realism,DavidAlfaroSiqueiros,Images\Social Realism\0028983_DavidAlfaroSiqueiros-TheChildMother.jpg
+9,09_0045117_GeorgesSeurat-SundayAfternoonontheIslandofLaGrandeJatte.jpg,正性/低唤醒,Calm,Positive,Low,Relieve Stress; Find Hope,Pointillism,GeorgesSeurat,Images\Pointillism\0045117_GeorgesSeurat-SundayAfternoonontheIslandofLaGrandeJatte.jpg
+10,10_0012913_FrancoisArnal-Lalumièretoujourspluslointaine.jpg,负性/低唤醒,Sad,Negative,Low,Overcome Sadness; Relieve Stress,Art Informel,FrancoisArnal,Images\Art Informel\0012913_FrancoisArnal-Lalumièretoujourspluslointaine.jpg
+11,11_0008497_PaulGauguin-NightCafeinArles(MadameGinoux).jpg,正性/高唤醒,Excited,Positive,High,Embrace Joy; Gain Inspiration,Post-Impressionism,PaulGauguin,Images\Post-Impressionism\0008497_PaulGauguin-NightCafeinArles(MadameGinoux).jpg
+12,12_0008339_AntoniTapies-L'Enveloppe.jpg,负性/低唤醒,Tired,Negative,Low,Relieve Stress,Tachisme,AntoniTapies,Images\Tachisme\0008339_AntoniTapies-L'Enveloppe.jpg
+13,13_0007379_EdwardHicks-PeaceableKingdom.jpg,正性/低唤醒,Calm,Positive,Low,Relieve Stress; Find Hope,Naïve Art (Primitivism),EdwardHicks,Images\Naïve Art (Primitivism)\0007379_EdwardHicks-PeaceableKingdom.jpg
+14,14_0006902_AndreDerain-TwoMen.jpg,负性/低唤醒,Sad,Negative,Low,Overcome Sadness,Expressionism,AndreDerain,Images\Expressionism\0006902_AndreDerain-TwoMen.jpg
+15,15_0027387_Cassandre-Calais-Douvres.jpg,正性/高唤醒,Excited,Positive,High,Gain Inspiration; Embrace Joy,Art Deco,Cassandre,Images\Art Deco\0027387_Cassandre-Calais-Douvres.jpg
+16,16_0006541_AlexanderRoitburd-TheLastSelfie.jpg,负性/高唤醒,Alarmed,Negative,High,Gain Inspiration,Transavantgarde,AlexanderRoitburd,Images\Transavantgarde\0006541_AlexanderRoitburd-TheLastSelfie.jpg
+17,17_0031284_CesarDomela-Composition.jpg,正性/高唤醒,Excited,Positive,High,Gain Inspiration; Embrace Joy,Concretism,CesarDomela,Images\Concretism\0031284_CesarDomela-Composition.jpg
+18,18_0008866_SueCoe-Genotek.jpg,负性/低唤醒,Sad,Negative,Low,Combat Anxiety; Relieve Stress,Social Realism,SueCoe,Images\Social Realism\0008866_SueCoe-Genotek.jpg
+19,19_0013513_GustavoSimoni-Agameofchequers.jpg,正性/低唤醒,Calm,Positive,Low,Relieve Stress; Find Hope,Orientalism,GustavoSimoni,Images\Orientalism\0013513_GustavoSimoni-Agameofchequers.jpg
+20,20_0014821_ElLissitzky-Illustrationto'Forthevoice'byVladimirMayakovsky.jpg,负性/高唤醒,Alarmed,Negative,High,Gain Inspiration; Combat Anxiety,Constructivism,ElLissitzky,Images\Constructivism\0014821_ElLissitzky-Illustrationto'Forthevoice'byVladimirMayakovsky.jpg
+21,21_0024974_PaulJacoulet-LesJoueurs.Chinois.jpg,正性/低唤醒,Calm,Positive,Low,Relieve Stress,Ukiyo-e,PaulJacoulet,Images\Ukiyo-e\0024974_PaulJacoulet-LesJoueurs.Chinois.jpg
+22,22_0011109_AndreMasson-Pasiphae.jpg,负性/高唤醒,Alarmed,Negative,High,Gain Inspiration,Cubism,AndreMasson,Images\Cubism\0011109_AndreMasson-Pasiphae.jpg
+23,"23_0009427_RaimundodeMadrazo-Luisa,RosaandRaimundo,childrenofthepainter.jpg",正性/低唤醒,Contentment,Positive,Low,Relieve Stress; Find Hope,Academicism,RaimundodeMadrazo,"Images\Academicism\0009427_RaimundodeMadrazo-Luisa,RosaandRaimundo,childrenofthepainter.jpg"
+24,24_0018911_TonyScherman-Neptune.jpg,负性/低唤醒,Sad,Negative,Low,Overcome Sadness,Neo-Expressionism,TonyScherman,Images\Neo-Expressionism\0018911_TonyScherman-Neptune.jpg
+25,25_0009468_JoanMitchell-LaChatiere.jpg,正性/高唤醒,Excited,Positive,High,Gain Inspiration; Embrace Joy,Abstract Expressionism,JoanMitchell,Images\Abstract Expressionism\0009468_JoanMitchell-LaChatiere.jpg
+26,26_0006677_EgonSchiele-Self-PortraitwithChineselanternfruits.jpg,负性/高唤醒,Annoyed,Negative,High,Gain Inspiration,Expressionism,EgonSchiele,Images\Expressionism\0006677_EgonSchiele-Self-PortraitwithChineselanternfruits.jpg
+27,27_0006146_OlegHolosiy-Eyes.jpg,正性/低唤醒,Calm,Positive,Low,Relieve Stress; Find Hope,Transavantgarde,OlegHolosiy,Images\Transavantgarde\0006146_OlegHolosiy-Eyes.jpg
+28,28_0006353_SaveriodellaGatta-Theeruptionof15June1794inTorredelGreco.jpg,负性/高唤醒,Alarmed,Negative,High,Gain Inspiration,Romanticism,SaveriodellaGatta,Images\Romanticism\0006353_SaveriodellaGatta-Theeruptionof15June1794inTorredelGreco.jpg
+29,29_0008127_CarlosMerida-Faces.jpg,正性/低唤醒,Calm,Positive,Low,Relieve Stress; Gain Inspiration,Cubism,CarlosMerida,Images\Cubism\0008127_CarlosMerida-Faces.jpg
+30,30_0008412_OscarDominguez-Losplatillosvolantes.jpg,负性/高唤醒,Alarmed,Negative,High,Gain Inspiration; Overcome Sadness,Surrealism,OscarDominguez,Images\Surrealism\0008412_OscarDominguez-Losplatillosvolantes.jpg
