@@ -30,9 +30,11 @@ _PLOT_HEIGHT_PX = 60   # height per channel row in pixels
 class RealtimeEEGTab(QWidget):
     """实时EEG信号显示Tab — 固定显示全部 64 通道"""
 
-    def __init__(self, device_controller=None):
+    def __init__(self, collection_tab=None):
         super().__init__()
-        self.device_controller = device_controller
+        # Accept either a collection_tab (ConsolePage) or a device_controller directly
+        self.collection_tab = collection_tab
+        self._direct_controller = None
 
         self._total_channels = _MAX_CHANNELS
         self._plots: list = []
@@ -43,6 +45,15 @@ class RealtimeEEGTab(QWidget):
         self._timer = QTimer()
         self._timer.timeout.connect(self._update_display)
         self._timer.start(50)
+
+    @property
+    def device_controller(self):
+        """Dynamically resolve device_controller from collection_tab or direct assignment."""
+        if self._direct_controller is not None:
+            return self._direct_controller
+        if self.collection_tab is not None:
+            return getattr(self.collection_tab, 'device_controller', None)
+        return None
 
     # ── UI ──────────────────────────────────────────────────────────
 
@@ -198,4 +209,4 @@ class RealtimeEEGTab(QWidget):
             c.setData([])
 
     def set_device_controller(self, controller):
-        self.device_controller = controller
+        self._direct_controller = controller

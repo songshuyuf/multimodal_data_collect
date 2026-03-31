@@ -15,13 +15,13 @@ from typing import Optional
 
 logger = logging.getLogger(__name__)
 
-# 检查 edge-tts 是否可用
+# 检查 edge-tts 是否可用（兼容 Python 3.8 — aiohttp 版本差异可能抛 TypeError）
 try:
     import edge_tts
     EDGE_TTS_AVAILABLE = True
-except ImportError:
+except Exception:
     EDGE_TTS_AVAILABLE = False
-    logger.warning("edge-tts 未安装，语音引导不可用。安装：pip install edge-tts")
+    logger.warning("edge-tts 不可用（可能因 Python/aiohttp 版本不兼容），语音引导已禁用")
 
 try:
     from PyQt5.QtCore import QObject, pyqtSignal
