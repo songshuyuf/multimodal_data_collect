@@ -223,10 +223,7 @@ class ShimmerEMGDevice:
             self._shimmer = result["shimmer"]
             self._ser     = result["ser"]
 
-            try:
-                self._configure()
-            except Exception as cfg_err:
-                logger.warning(f"[EMG] 配置阶段部分失败（{cfg_err}），设备仍可用")
+            _patch_inquiry(self._shimmer, TARGET_SAMPLE_RATE)
 
             self._connected = True
             logger.info(f"[EMG] ✓ 已连接：{port}")
