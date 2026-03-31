@@ -1,11 +1,11 @@
 """
 实时EEG信号显示Tab — pyqtgraph 版
-支持 Neuracle HEEG 64通道脑电信号实时显示，可选通道范围
+固定显示全部 64 通道脑电信号（垂直排列，每通道独立子图，可滚动）
 """
 
 from PyQt5.QtWidgets import (
     QWidget, QVBoxLayout, QHBoxLayout, QLabel,
-    QGroupBox, QFrame, QSpinBox,
+    QGroupBox, QFrame, QScrollArea,
 )
 from PyQt5.QtCore import Qt, QTimer
 import numpy as np
@@ -23,18 +23,18 @@ _PLOT_COLORS = [
     "#ffab91", "#bcaaa4", "#b0bec5", "#80deea",
 ]
 
+_MAX_CHANNELS = 64
+_PLOT_HEIGHT_PX = 60   # height per channel row in pixels
+
 
 class RealtimeEEGTab(QWidget):
-    """实时EEG信号显示Tab — 支持 64 通道可选"""
+    """实时EEG信号显示Tab — 固定显示全部 64 通道"""
 
     def __init__(self, device_controller=None):
         super().__init__()
         self.device_controller = device_controller
 
-        self._ch_start = 0
-        self._ch_count = 8
-        self._total_channels = 64
-
+        self._total_channels = _MAX_CHANNELS
         self._plots: list = []
         self._curves: list = []
 
@@ -44,8 +44,12 @@ class RealtimeEEGTab(QWidget):
         self._timer.timeout.connect(self._update_display)
         self._timer.start(50)
 
+    # ── UI ──────────────────────────────────────────────────────────
+
     def _init_ui(self):
         layout = QVBoxLayout()
+        layout.setContentsMargins(0, 0, 0, 0)
+        layout.setSpacing(4)
 
         header = self._build_header()
         layout.addLayout(header)
@@ -56,10 +60,19 @@ class RealtimeEEGTab(QWidget):
         layout.addWidget(line)
 
         if PYQTGRAPH_AVAILABLE:
+            # Wrap the tall GraphicsLayoutWidget in a scroll area
             self._pg = pg.GraphicsLayoutWidget()
+            self._pg.setMinimumHeight(_PLOT_HEIGHT_PX * _MAX_CHANNELS)
+
             from app.monitors import theme_pg_layout
             theme_pg_layout(self._pg)
-            layout.addWidget(self._pg, stretch=1)
+
+            scroll = QScrollArea()
+            scroll.setWidgetResizable(True)
+            scroll.setWidget(self._pg)
+            scroll.setStyleSheet("QScrollArea{background: transparent; border: none;}")
+            layout.addWidget(scroll, stretch=1)
+
             self._rebuild_plots()
         else:
             layout.addWidget(QLabel("pyqtgraph 未安装，无法显示波形"))
@@ -81,23 +94,6 @@ class RealtimeEEGTab(QWidget):
         """)
         layout.addWidget(title)
         layout.addStretch()
-
-        ch_group = QGroupBox("通道选择")
-        ch_lay = QHBoxLayout()
-        ch_lay.addWidget(QLabel("起始:"))
-        self._sp_start = QSpinBox()
-        self._sp_start.setRange(1, 64)
-        self._sp_start.setValue(1)
-        self._sp_start.valueChanged.connect(self._on_channel_changed)
-        ch_lay.addWidget(self._sp_start)
-        ch_lay.addWidget(QLabel("显示:"))
-        self._sp_count = QSpinBox()
-        self._sp_count.setRange(1, 16)
-        self._sp_count.setValue(8)
-        self._sp_count.valueChanged.connect(self._on_channel_changed)
-        ch_lay.addWidget(self._sp_count)
-        ch_group.setLayout(ch_lay)
-        layout.addWidget(ch_group)
 
         status_group = QGroupBox("设备状态")
         sl = QHBoxLayout()
@@ -124,12 +120,6 @@ class RealtimeEEGTab(QWidget):
 
         return layout
 
-    def _on_channel_changed(self):
-        self._ch_start = self._sp_start.value() - 1
-        self._ch_count = self._sp_count.value()
-        if PYQTGRAPH_AVAILABLE:
-            self._rebuild_plots()
-
     def _rebuild_plots(self):
         self._pg.clear()
         self._plots.clear()
@@ -139,11 +129,11 @@ class RealtimeEEGTab(QWidget):
         dark = _is_dark()
         fg = '#d4d4d4' if dark else '#333333'
 
-        n = self._ch_count
+        n = self._total_channels
         for i in range(n):
-            ch_idx = self._ch_start + i
             p = self._pg.addPlot(row=i, col=0)
-            p.setLabel('left', f'Ch{ch_idx + 1}', units='μV', color=fg)
+            p.setFixedHeight(_PLOT_HEIGHT_PX)
+            p.setLabel('left', f'Ch{i + 1}', units='μV', color=fg)
             p.showGrid(y=True, alpha=0.2)
             p.setMouseEnabled(x=False, y=False)
             if i < n - 1:
@@ -160,6 +150,8 @@ class RealtimeEEGTab(QWidget):
             curve = p.plot(pen=pg.mkPen(color, width=1))
             self._plots.append(p)
             self._curves.append(curve)
+
+    # ── 更新 ────────────────────────────────────────────────────────
 
     def _update_display(self):
         try:
@@ -186,20 +178,20 @@ class RealtimeEEGTab(QWidget):
                 return
 
             total_ch = data.shape[0]
-            if total_ch != self._total_channels:
+            # If device reports more channels than expected, rebuild plots once
+            if total_ch != self._total_channels and PYQTGRAPH_AVAILABLE:
                 self._total_channels = total_ch
-                self._sp_start.setRange(1, max(1, total_ch))
-                self._sp_count.setRange(1, min(16, total_ch))
+                self._pg.setMinimumHeight(_PLOT_HEIGHT_PX * total_ch)
+                self._rebuild_plots()
 
-            ch0 = self._ch_start
             for i, curve in enumerate(self._curves):
-                ch = ch0 + i
-                if ch < total_ch:
-                    curve.setData(data[ch, :])
-                    self._plots[i].setLabel('left', f'Ch{ch + 1}', units='μV')
+                if i < total_ch:
+                    curve.setData(data[i, :])
 
         except Exception:
             pass
+
+    # ── 公开接口 ────────────────────────────────────────────────────
 
     def clear_display(self):
         for c in self._curves:

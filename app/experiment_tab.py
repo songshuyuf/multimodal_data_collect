@@ -257,8 +257,11 @@ class ConsolePage(SmoothScrollArea):
             self._runner.start()
 
         except Exception as e:
-            self._log(f"\u2717 启动实验范式失败：{e}")
             import traceback
+            tb = traceback.format_exc()
+            self._log(f"\u2717 启动实验范式失败：{e}")
+            for line in tb.splitlines():
+                self._log(line)
             traceback.print_exc()
 
     def _on_task_started(self, name: str, task_id: int):

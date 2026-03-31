@@ -193,16 +193,31 @@ class ExperimentRunner(QObject):
     def _build_queue(self):
         """将 tasks 和 rest_breaks 交织为统一队列。"""
         tasks = self._config.get("tasks", [])
-        breaks_map: Dict[int, dict] = {
-            rb["after_task"]: rb
-            for rb in self._config.get("rest_breaks", [])
-        }
+
+        # Build breaks_map safely - after_task must be hashable (int/str)
+        breaks_map: dict = {}
+        for rb in self._config.get("rest_breaks", []):
+            key = rb.get("after_task")
+            if key is None:
+                continue
+            # If after_task is a list, register the break for each task id in the list
+            if isinstance(key, list):
+                for k in key:
+                    try:
+                        breaks_map[k] = rb
+                    except TypeError:
+                        pass
+            else:
+                try:
+                    breaks_map[key] = rb
+                except TypeError:
+                    pass
 
         self._queue = []
         for task in tasks:
             self._queue.append({"kind": "task", "config": task})
-            tid = task["id"]
-            if tid in breaks_map:
+            tid = task.get("id")
+            if tid is not None and tid in breaks_map:
                 rb = breaks_map[tid]
                 self._queue.append({
                     "kind": "break",
